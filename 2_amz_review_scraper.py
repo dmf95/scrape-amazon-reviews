@@ -26,7 +26,7 @@ def get_reviews(soup):
         pass
 
 # method = loop through 1:x many pages, or until the css selector found only on the last page is found (when the next page button is greyed)
-for x in range(1,50):
+for x in range(1,20):
     soup = get_soup(f'https://www.amazon.ca/Sony-WF-1000XM3-Industry-Canceling-Wireless/product-reviews/B07T81554H/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&reviewerType=all_reviews&pageNumber={x}')
     print(f'Getting page: {x}')
     get_reviews(soup)
