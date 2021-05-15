@@ -6,6 +6,7 @@ import pandas as pd
 # URL setup and HTML request
 url = 'https://www.amazon.ca/Sony-WF-1000XM3-Industry-Canceling-Wireless/product-reviews/B07T81554H/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&reviewerType=all_reviews'
 r = requests.get('http://localhost:8050/render.html', params = {'url': url, 'wait' : 2})
+#r = requests.get(url)
 #print(r)
 
 # Parsing the HTML content
