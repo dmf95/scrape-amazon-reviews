@@ -40,4 +40,5 @@ for item in reviews:
 # Save results to a dataframe, then export as CSV
 df = pd.DataFrame(data)
 df.to_csv(r'sony-headphones.csv', index=False)
+print('End.')
 
