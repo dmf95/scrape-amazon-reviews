@@ -55,7 +55,8 @@ for url in url_list: # url list
 
 # Save results to a dataframe, then export as CSV
 df = pd.DataFrame(review_list)
-df.to_csv(r'dog-cameras.csv', index=False)
+df.to_csv(r'dog-cameras-raw.csv', index=False)
 
-print('Fin')
+rows = len(df)
+print(f'Fin: {rows} records saved to CSV')
 
